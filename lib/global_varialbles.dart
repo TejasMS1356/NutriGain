@@ -110,4 +110,34 @@ final products = [
     'description':
         'Soya chunks are a high-protein meat substitute made from defatted soy flour. \nThey are rich in protein, fiber, and essential nutrients, making them an excellent choice for vegetarians and vegans looking to increase their protein intake.\nIncluding soya chunks in your diet can help support muscle growth, repair tissues, and provide essential nutrients for overall health.\nA 100-gram serving of soya chunks typically contains around 52 grams of protein, making them one of the richest plant-based protein sources available.',
   },
+  {
+    'id': '13',
+    'name': 'Rice',
+    'category': 'Grains',
+    'protein': 7,
+    'calories': 130,
+    'imageUrl': 'assets/a13.webp',
+    'description':
+        'Rice is a staple food that provides carbohydrates, a small amount of protein, and essential nutrients. \nIt serves as a primary energy source and can be part of a balanced diet.\nIncluding rice in your diet can contribute to overall nutrition and energy levels.\nA 100-gram serving of cooked rice typically contains around 7 grams of protein, making it a useful addition to meals for those looking to increase their protein intake.',
+  },
+  {
+    'id': '14',
+    'name': 'Dal',
+    'category': 'veg',
+    'protein': 9,
+    'calories': 116,
+    'imageUrl': 'assets/a14.webp',
+    'description':
+        'Dal, or lentils, are a rich source of plant-based protein, fiber, and essential nutrients. \nThey support muscle growth, digestion, and overall health. Including dal in your diet can contribute to a balanced and nutritious meal plan.\nA 100-gram serving of cooked dal typically contains around 9 grams of protein, making it an excellent choice for vegetarians looking to increase their protein intake.',
+  },
+  {
+    'id': '15',
+    'name': 'Roti',
+    'category': 'Grains',
+    'protein': 8,
+    'calories': 120,
+    'imageUrl': 'assets/a15.webp',
+    'description':
+        'Roti, or whole wheat flatbread, is a good source of carbohydrates, fiber, and a moderate amount of protein. \nIt provides sustained energy and supports digestive health. Including roti in your diet can contribute to a balanced and nutritious meal plan.\nA medium-sized roti typically contains around 8 grams of protein, making it a useful addition to meals for those looking to increase their protein intake.',
+  },
 ];
