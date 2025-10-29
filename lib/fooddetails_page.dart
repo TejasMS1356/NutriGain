@@ -1,8 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:protiencaluclator/fooddetails_page.dart';
-import 'package:protiencaluclator/home_page.dart';
-import 'package:protiencaluclator/global_varialbles.dart';
-import 'package:protiencaluclator/fooddetails_page.dart';
 
 class FooddetailsPage extends StatefulWidget {
   final Map<String, Object> product;
