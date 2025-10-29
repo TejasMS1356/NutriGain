@@ -4,8 +4,8 @@ class FoodCard extends StatelessWidget {
   final String name;
   // final String description;
   final String image;
-  // final double protein;
-  // final double calories;
+  final double protein;
+  final double calories;
 
   const FoodCard({
     super.key,
@@ -13,8 +13,8 @@ class FoodCard extends StatelessWidget {
     // required this.description,
     required this.image,
     required Color backgroundcolor,
-    // required this.protein,
-    // required this.calories,
+    required this.protein,
+    required this.calories,
   });
 
   @override
@@ -31,12 +31,16 @@ class FoodCard extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
-              name,
+              (name),
               style: const TextStyle(
                 fontSize: 30,
                 fontWeight: FontWeight.bold,
                 color: Colors.white,
               ),
+            ),
+            Text(
+              "protein: $protein g, calories: $calories kcal per 100g ",
+              style: TextStyle(fontSize: 15),
             ),
             const SizedBox(height: 10),
             Center(
@@ -46,24 +50,10 @@ class FoodCard extends StatelessWidget {
                 height: 250,
               ),
             ),
-            //        const SizedBox(height: 10),
-            //        Text("Protien: $protein g",style:const TextStyle(
-            //         fontSize: 20,
-            //         fontWeight: FontWeight.bold,
-            //         color: Colors.white,
-            //        ),),
-            //         const SizedBox(height: 5),
-            //         Text("Calories: $calories kcal",style:const TextStyle(
-            //         fontSize: 20, ),),
-            //         const
-            // SizedBox(height: 10),
-            //         Text(description,style:const TextStyle(
-            //           fontSize: 16,
-            //           color: Colors.white,
-            //         ),),
           ],
         ),
       ),
     );
   }
 }
+
