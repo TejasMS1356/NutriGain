@@ -28,7 +28,7 @@ class _HomePageState extends State<HomePage> {
   void initState() {
     super.initState();
     fps = products;
-    checkedItems = List<bool>.filled(fps.length, false);
+    checkedItems = List<bool>.filled(fps.length, true);
   }
 
   int currentpage = 1;
