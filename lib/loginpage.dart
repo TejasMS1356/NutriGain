@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:protiencaluclator/signup.dart';
+import 'signup.dart';
+import 'home_page.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({super.key});
@@ -49,6 +52,7 @@ class LoginPage extends StatelessWidget {
                         ),
                       ),
                       const SizedBox(height: 32),
+
                       TextField(
                         decoration: InputDecoration(
                           hintText: "Enter Username",
@@ -65,7 +69,9 @@ class LoginPage extends StatelessWidget {
                           ),
                         ),
                       ),
+
                       const SizedBox(height: 20),
+
                       TextField(
                         obscureText: true,
                         decoration: InputDecoration(
@@ -83,13 +89,14 @@ class LoginPage extends StatelessWidget {
                           ),
                         ),
                       ),
+
                       const SizedBox(height: 10),
+
                       Row(
                         mainAxisAlignment: MainAxisAlignment.end,
                         children: [
                           GestureDetector(
                             onTap: () {
-                              // Forgot password logic
                             },
                             child: const Text(
                               "Forgot Password?",
@@ -102,9 +109,18 @@ class LoginPage extends StatelessWidget {
                           ),
                         ],
                       ),
+
                       const SizedBox(height: 25),
+
                       ElevatedButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (_) => const HomePage(product: []),
+                            ),
+                          );
+                        },
                         style: ElevatedButton.styleFrom(
                           padding: const EdgeInsets.symmetric(
                             horizontal: 40,
@@ -127,10 +143,20 @@ class LoginPage extends StatelessWidget {
                           style: TextStyle(fontSize: 16),
                         ),
                       ),
+
                       const SizedBox(height: 20),
+
                       const Text("Don't have an account?"),
+
                       TextButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (_) => const SignuPage(),
+                            ),
+                          );
+                        },
                         child: const Text(
                           "Register here",
                           style: TextStyle(
