@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:protiencaluclator/detailspage.dart';
 
 class SignuPage extends StatelessWidget {
   const SignuPage({super.key});
@@ -130,7 +131,14 @@ class SignuPage extends StatelessWidget {
                       const SizedBox(height: 10),
 
                       ElevatedButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (_) => const DetailsPage(),
+                            ),
+                          );
+                        },
                         style: ElevatedButton.styleFrom(
                           padding: const EdgeInsets.symmetric(
                             horizontal: 40,
